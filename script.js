@@ -28,12 +28,10 @@ botaoSec.addEventListener('click', function() {
         img.src = './Assets/chaos.png'; // URL da imagem
         img.alt = 'Imagem Carregada';
         imageContainer.appendChild(img);
-    }
-
-    if (img.style.display === 'block' || img.style.display === '') {
-        img.style.display = 'none'; // Oculta a imagem se ela estiver visível
+    img.style.display = 'block'; // Exibe a imagem quando é criada
     } else {
-        img.style.display = 'block'; // Exibe a imagem se estiver oculta
+        // Alterna a visibilidade da imagem
+        img.style.display = img.style.display === 'none' ? 'block' : 'none';
     }
-
+    
 });
