@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* position: relative; */
+    /* alinhar no meio */
+}
+.container {
+    text-align: center;
+}
+button {
+    border-radius: 8px;
+    width: 300px;
+    min-width: 100px;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    cursor: pointer;
+    background-color: white;
+}
+button:hover{
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.4) ;
+}
+
+.botaoBaixo{
+    position: absolute;
+    bottom: 20px;
+}
+
+#imageContainer {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#imageContainer img {
+    max-width: 400px;
+    max-height: 400px;
+    display: none; /* A imagem começa oculta */
+}
